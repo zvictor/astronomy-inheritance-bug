@@ -1,4 +1,9 @@
-output:
+From the Inheritance section in the docs:
+> When fetching the given document from the collection, the transform function will automatically fetch an instance of proper class.
+
+This is true, but not when the document is nested. In that case, there is not magic transforming the instance to the proper class.
+
+`meteor` output of this project:
 
 ```js
 
