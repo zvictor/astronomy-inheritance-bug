@@ -3,6 +3,11 @@ From the Inheritance section in the docs:
 
 This is true, but not when the document is nested. In that case, there is not magic transforming the instance to the proper class.
 
+Issue: [jagi/meteor-astronomy#205](https://github.com/jagi/meteor-astronomy/issues/205)
+
+
+------
+
 `meteor` output of this project:
 
 ```js
