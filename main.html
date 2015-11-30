@@ -1,0 +1,20 @@
+<body>
+
+  {{> main}}
+
+</body>
+
+
+<template name="main">
+
+  <ol class="leaderboard">
+    {{#each all}}
+      <li>
+        {{stringify}}
+      </li>
+    {{/each}}
+  </ol>
+
+  In the Nested objects, in the key `embedded`, the nested objects should cast to their types.
+
+</template>
