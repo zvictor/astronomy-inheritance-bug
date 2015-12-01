@@ -2,7 +2,6 @@ Items = new Mongo.Collection('items');
 
 Parent = Astro.Class({
   name: 'Parent',
-  collection: Items,
   typeField: 'type',
   fields: {
     parent: 'string'
@@ -16,8 +15,9 @@ Child = Parent.inherit({
   }
 });
 
-Nested = Parent.inherit({
+Nested = Astro.Class({
   name: 'Nested',
+  collection: Items,
   fields: {
     embedded: {
       type: 'object',
